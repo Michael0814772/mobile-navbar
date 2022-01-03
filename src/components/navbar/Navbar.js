@@ -25,7 +25,7 @@ const Navbar = () => {
             <div className="menu-icon" onClick={() => setClicked(!clicked)}>
                 {clicked ? <AiOutlineClose className='close-icon' /> : <AiOutlineMenu className='open-icon' />}
             </div>
-            <ul className={clicked ? "menu-list": "menu-list close"}>
+            <ul className={clicked ? "menu-list": "menu-list close"} onClick={() => setClicked(false)}>
                 {menuList}
             </ul>
         </nav>
