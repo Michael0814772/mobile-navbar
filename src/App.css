@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  position: relative;
+  z-index: 2;
+}
+
+.page-heading h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0px 20px;
+  border-radius: 15px;
+}
+
+@media (max-width: 800px) {
+  .page-heading h1 {
+    font-size: 3rem;
+  }
+}
